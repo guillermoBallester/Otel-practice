@@ -18,7 +18,8 @@ func main() {
 
 	// Create gRPC metric exporter
 	exporter, err := otlpmetricgrpc.New(ctx, otlpmetricgrpc.WithInsecure(),
-		otlpmetricgrpc.WithEndpoint("http://otel-collector:4318"),
+		otlpmetricgrpc.WithEndpoint("otel-collector:4317"),
+
 	)
 	if err != nil {
 		log.Fatalf("Failed to create OTLP metric exporter: %v", err)
