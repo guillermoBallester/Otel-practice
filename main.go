@@ -14,7 +14,6 @@ import (
 
 func main() {
 	ctx := context.Background()
-
 	fmt.Println("Starting OpenTelemetry Exporter...")
 
 	// Create gRPC metric exporter
